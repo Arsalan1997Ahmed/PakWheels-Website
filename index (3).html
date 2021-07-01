@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+
+        .container {
+
+            background-color: black;
+            background-image: linear-gradient(to bottom, rgb(14, 11, 11), rgba(6, 67, 117, 0.377), rgb(8, 67, 122), rgb(7, 58, 99));
+            padding-bottom: 20% ;
+        }
+
+        .nav {
+
+            display: flex;
+            align-items: center;
+            padding: 16px 4px;
+
+            height: 100%;
+        }
+
+        .but{
+            background-color: green;
+            width: 59px; 
+            border: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute
+        }
+
+        .list ul li {
+            display: inline-block;
+            padding: 4px;
+
+        }
+
+        .list ul li a {
+            text-decoration: none;
+            padding: 8px 15px;
+            display: block;
+
+        }
+
+        .logo {
+            margin: 0 0 0 27px;
+        }
+
+        .logo a img {
+            margin: 20px;
+            height: 40px;
+            width: 150px;
+        }
+
+
+        .button1 {
+            background-color: rgb(214, 37, 37);
+            color: white;
+            font-weight: bold;
+            padding: 12px 22px;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        button ul li a:hover {
+            display: block;
+
+            padding: 16px 16px;
+            background-color: white;
+            color: red;
+        }
+
+        .list ul li a:hover {
+            display: block;
+
+            background-color: white;
+            color: red;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li ul {
+            background: black;
+
+        }
+
+        .color {
+            background-image: linear-gradient(to bottom, rgb(7, 7, 77)rgba(2, 2, 163, 0.561));
+            height: 20vh;
+        }
+
+        .clr {
+            background-color: white;
+
+            height: 20vh;
+        }
+
+        .list ul li:hover ul li {
+            float: none;
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 16px 16px;
+        }
+
+        button:hover ul {
+            float: none;
+            display: block;
+            background-color: black;
+            color: white;
+            padding: 16px;
+
+        }
+
+        ul button ul {
+            display: none;
+        }
+
+        ul li ul {
+            display: none;
+        }
+
+        ul li:hover ul {
+            display: block;
+        }
+
+        #arrange h1 {
+            text-align: center;
+            margin-top: 120px;
+            font-size: 38px;
+            font-weight: normal;
+            font-family: 'Lato', sans-serif;
+
+        }
+
+        #arrange p {
+            text-align: center;
+
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0;
+
+        }
+
+        .search {
+            padding-top: 30px;
+            padding-bottom: 28px;
+            /* line-height: 24px;
+            position: relative;
+            z-index: 6; */
+
+        }
+
+    
+
+        #back input {
+            height: 100%;
+            /* text-align: center; */
+            border: none;
+            outline: none;
+            /* margin-left: 200px;
+            padding: 16px 80px; */
+            color: black;
+            width: 40%
+
+        }
+
+        #back select {
+            border: none;
+            width: 26.13%;
+            color: black;
+
+        }
+
+        .one {
+            margin-left: -4;
+        }
+
+        .dropdown li {
+            background-color: white !important;
+        }
+
+        .dropdown li a,
+        .dropdown li a p {
+            color: black;
+        }
+
+        button {
+            height: 100%;
+        }
+
+        #back {
+            height: 42px;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            margin: 0 auto;
+        }
+         .ad{
+         
+          color: white;
+          text-align: center;
+          margin-top: 30px;
+         }
+         
+        .ad a{
+            border:white 2px solid;
+            text-decoration: none;
+            font-size: 16px;
+            /* margin-top: 5px; */
+         }
+         select:hover option{
+             color: black;
+         }
+         .but:hover{
+             background-color: rgb(7, 90, 7);
+             cursor: pointer;
+         }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvEenRZcGdVXJNWt6agU0pvj1p1_ohUYN7sw&usqp=CAU">
+                </a> 
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="">Used Cars <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a>Find Used Cars<br>
+                                    <p>Browse over 150K options</p>
+                                </a></li>
+                            <li><a>Featured Used Cars<br>
+                                    <p>View featured car by pakwheels</p>
+                                </a></li>
+                            <li><a>sell Your Car<br>
+                                    <p>Post a free ad and sell your car quickly</p>
+                                </a></li>
+                            <li><a>Suzuki Certified<br>
+                                    <p>View cars certified by Suzuki</p>
+                                </a></li>
+                            <li><a>Car Dealers<br>
+                                    <p>Find used car dealers near you</p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">New Cars<i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a>Find New Cars<br>
+                                    <p>see new cars in pakistan</p>
+                                </a></li>
+                            <li><a>Car Comparisions<br>
+                                    <p>Compare cars and find their differences</p>
+                                </a></li>
+                            <li><a>Reviews<br>
+                                    <p>Read Reviews of all cars in Pakistan</p>
+                                </a></li>
+                            <li><a>Prices<br>
+                                    <p>see prices of every cars</p>
+                                </a></li>
+                            <li><a>On Road Price<br>
+                                    <p>Calculate the total cost of new car</p>
+                                </a></li>
+                            <li><a>New Car Dealers<br>
+                                    <p>Find new car Dealers</p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Bikes<i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a>Find Used Bikes<br>
+                                    <p>Find your dream bike</p>
+                                </a></li>
+                            <li><a>Featured Used Bikes<br>
+                                    <p>Browsed our featured Bikes</p>
+                                </a></li>
+                            <li><a>Sell Your Bike<br>
+                                    <p>Post a free ad and sell your car Parts quickly</p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Auto Store<i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a>Find Auto Parts<br>
+                                    <p>Find auto parts for your car</p>
+                                </a></li>
+                            <li><a>Buy Now Auto Parts<br>
+                                    <p>Buy Auto Parts & Accessories directly from pakwheels</p>
+                                </a></li>
+                            <li><a>Sell Car Parts<br>
+                                    <p>Post a free ad and sell your Bike quickly</p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Videos</a></li>
+                    <li><a href="">Forums</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">More<i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a>Cool Rides<br>
+                                    <p>Members rides cars and Bikes</p>
+                                </a></li>
+                            <li><a>Car Import<br>
+                                    <p>Import your favourite car</p>
+                                </a></li>
+                            <li><a>Car Insurance<br>
+                                    <p>Get car insurance quote</p>
+                                </a></li>
+                            <li><a>Car Finance<br>
+                                    <p>Compare plans and apply for car loan</p>
+                                </a></li>
+                            <li><a>MTMIS Pakistan<br>
+                                    <p>Online Vehicle verification</p>
+                                </a></li>
+                            <li><a>DLIMS Pakistan<br>
+                                    <p>Driving License verification System</p>
+                                </a></li>
+                            <li><a>Current Fuel Pricess<br>
+                                    <p>Check Latest Petrol,Diesel and CNG Price</p>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <button value="button" class="button1"><b>Post an Add</b><i class="fa fa-caret-down"></i>
+                        <ul class="dropdown">
+                            <li><a>Sell Car</a></li>
+                            <li><a>Sell Bike</a></li>
+                            <li><a>Accessory</a></li>
+                        </ul>
+                    </button>
+                </ul>
+            </div>
+        </div>
+        <div id="arrange" class="search">
+            <h1>Find Used Cars in Pakistan</h1>
+            <p>With thousands of cars, we have just the right one for you</p>
+        </div>
+        <div id="back">
+            <input type="text" name="" id="" placeholder="Car Make or Model">
+            <select name="cities" class="one" cities>
+                <option value="none" selected disabled hidden>All cities</option>
+                <option value="karachi">Karachi</option>
+                <option value="karachi">Lahore</option>
+            </select>
+            <select name="cities" class="one">
+                <option value="none" selected disabled hidden>Price Range</option>
+                <option value="karachi">30K</option>
+                <option value="karachi">40K</option>
+            </select>
+            <button class="but"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="ad"><a href="">Advanced filter ></a></div>
+    </div>
+    
+    
+    </div>
+</body>
+
+</html>
